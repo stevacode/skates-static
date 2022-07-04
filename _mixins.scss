@@ -1,0 +1,17 @@
+@mixin btn($bg: $accents, $color: $text) {
+  background: $bg;
+  color: $color;
+  display: inline-block;
+  padding: 10px 30px;
+  text-decoration: none;
+  transform: skew(-10deg);
+  border: 1px solid $accents;
+  transition: $transition;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  &:hover {
+    background: $text;
+    color: $white;
+    border: 1px solid $text;
+  }
+}

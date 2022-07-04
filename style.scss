@@ -1,0 +1,184 @@
+@import "_variables";
+@import "_mixins";
+@import "_basics";
+/***************************
+nav
+***************************/
+nav {
+  transition: 0.5s ease;
+
+  .navbar-brand {
+    img {
+      width: 10%;
+    }
+  }
+  .nav-link {
+    color: $white;
+    text-transform: uppercase;
+    &:hover {
+      color: $accents;
+    }
+  }
+}
+.sticky {
+  background: rgba($accents, 0.8);
+  padding: 8px 0;
+  box-shadow: 0 1px 8px 3px rgba($black, 0.1);
+  .nav-link {
+    color: $black;
+    &:hover {
+      color: $white;
+      text-shadow: 0 0 1px $black;
+    }
+  }
+}
+/***************************
+header
+***************************/
+header {
+  background-image: linear-gradient(rgba($black, 0.5), rgba($black, 0.5)),
+    url(img/header.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  h1 {
+    color: $accents;
+    font-style: italic;
+    font-size: 5rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+  .button {
+    &:first-of-type {
+      @include btn;
+    }
+    &:last-of-type {
+      @include btn($bg: transparent, $color: $accents);
+      &:hover {
+        background: $accents;
+        border: 1px solid $accents;
+        color: $text;
+      }
+    }
+  }
+}
+/***************************
+slider
+***************************/
+.carousel-caption.up {
+  top: 0;
+}
+.carousel-caption .lead {
+  color: $accents;
+  text-shadow: 0 0 2px $black;
+}
+/***************************
+plan
+***************************/
+.plan {
+  .col-md-4 {
+    &:nth-child(2) {
+      box-shadow: 0 0 30px lightgray;
+    }
+    ul {
+      line-height: 2;
+      padding: 30px 0;
+      li::after {
+        font: var(--fa-font-solid);
+        content: "\f655";
+        color: $accents;
+        text-shadow: 0 0 1px $black;
+        margin-left: 5px;
+      }
+      .button {
+        @include btn;
+        margin-top: 30px;
+      }
+    }
+  }
+}
+/***************************
+map
+***************************/
+.map {
+  position: relative;
+  h2 {
+    position: absolute;
+    top: 30px;
+    right: 5%;
+  }
+  article {
+    background: $accents;
+    position: absolute;
+    bottom: 50px;
+    right: 5%;
+    width: 26%;
+    padding: 30px;
+    border: 1px solid $black;
+  }
+}
+/***************************
+blog
+***************************/
+.blog {
+  .col-md-4 {
+    position: relative;
+    a {
+      color: $accents;
+      text-transform: uppercase;
+      text-shadow: 0 0 1px $black;
+      &:hover {
+        color: $black;
+      }
+    }
+    h3 {
+      position: absolute;
+      bottom: 30px;
+      left: 30px;
+      color: $white;
+    }
+    .button {
+      @include btn;
+      position: absolute;
+      bottom: 30px;
+      right: 40px;
+    }
+  }
+}
+/***************************
+subscribe
+***************************/
+.subscribe {
+  background: $accents;
+  input {
+    padding: 10px 30px;
+    transform: skewX(-10deg);
+  }
+  .button {
+    @include btn($bg: transparent, $color: $white);
+    border: 1px solid $white;
+  }
+}
+/***************************
+footer
+***************************/
+footer {
+  background: $black;
+  img {
+    width: 150px;
+  }
+  h4 {
+    color: $white;
+  }
+  ul {
+    a {
+      // color: rgba($white, 0.6); ovo ako hocemo opacity
+      color: darken($white, 40%);
+      line-height: 2;
+      &:hover {
+        color: $accents;
+      }
+    }
+  }
+}

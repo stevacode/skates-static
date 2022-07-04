@@ -1,0 +1,270 @@
+body {
+  font-size: 16px;
+}
+
+h2 {
+  font-weight: bolder;
+  font-size: 3rem;
+  font-style: italic;
+}
+
+.py {
+  padding: 100px 0;
+}
+@media (max-width: 767px) {
+  .py {
+    padding: 50px 0;
+  }
+}
+
+a {
+  transition: 0.3s ease-in-out;
+}
+
+/***************************
+nav
+***************************/
+nav {
+  transition: 0.5s ease;
+}
+nav .navbar-brand img {
+  width: 10%;
+}
+nav .nav-link {
+  color: #fff;
+  text-transform: uppercase;
+}
+nav .nav-link:hover {
+  color: #ffd100;
+}
+
+.sticky {
+  background: rgba(255, 209, 0, 0.8);
+  padding: 8px 0;
+  box-shadow: 0 1px 8px 3px rgba(0, 0, 0, 0.1);
+}
+.sticky .nav-link {
+  color: #000;
+}
+.sticky .nav-link:hover {
+  color: #fff;
+  text-shadow: 0 0 1px #000;
+}
+
+/***************************
+header
+***************************/
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/header.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+header h1 {
+  color: #ffd100;
+  font-style: italic;
+  font-size: 5rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  line-height: 1;
+}
+header .button:first-of-type {
+  background: #ffd100;
+  color: #212529;
+  display: inline-block;
+  padding: 10px 30px;
+  text-decoration: none;
+  transform: skew(-10deg);
+  border: 1px solid #ffd100;
+  transition: 0.3s ease-in-out;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+header .button:first-of-type:hover {
+  background: #212529;
+  color: #fff;
+  border: 1px solid #212529;
+}
+header .button:last-of-type {
+  background: transparent;
+  color: #ffd100;
+  display: inline-block;
+  padding: 10px 30px;
+  text-decoration: none;
+  transform: skew(-10deg);
+  border: 1px solid #ffd100;
+  transition: 0.3s ease-in-out;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+header .button:last-of-type:hover {
+  background: #212529;
+  color: #fff;
+  border: 1px solid #212529;
+}
+header .button:last-of-type:hover {
+  background: #ffd100;
+  border: 1px solid #ffd100;
+  color: #212529;
+}
+
+/***************************
+slider
+***************************/
+.carousel-caption.up {
+  top: 0;
+}
+
+.carousel-caption .lead {
+  color: #ffd100;
+  text-shadow: 0 0 2px #000;
+}
+
+/***************************
+plan
+***************************/
+.plan .col-md-4:nth-child(2) {
+  box-shadow: 0 0 30px lightgray;
+}
+.plan .col-md-4 ul {
+  line-height: 2;
+  padding: 30px 0;
+}
+.plan .col-md-4 ul li::after {
+  font: var(--fa-font-solid);
+  content: "\f655";
+  color: #ffd100;
+  text-shadow: 0 0 1px #000;
+  margin-left: 5px;
+}
+.plan .col-md-4 ul .button {
+  background: #ffd100;
+  color: #212529;
+  display: inline-block;
+  padding: 10px 30px;
+  text-decoration: none;
+  transform: skew(-10deg);
+  border: 1px solid #ffd100;
+  transition: 0.3s ease-in-out;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 30px;
+}
+.plan .col-md-4 ul .button:hover {
+  background: #212529;
+  color: #fff;
+  border: 1px solid #212529;
+}
+
+/***************************
+map
+***************************/
+.map {
+  position: relative;
+}
+.map h2 {
+  position: absolute;
+  top: 30px;
+  right: 5%;
+}
+.map article {
+  background: #ffd100;
+  position: absolute;
+  bottom: 50px;
+  right: 5%;
+  width: 26%;
+  padding: 30px;
+  border: 1px solid #000;
+}
+
+/***************************
+blog
+***************************/
+.blog .col-md-4 {
+  position: relative;
+}
+.blog .col-md-4 a {
+  color: #ffd100;
+  text-transform: uppercase;
+  text-shadow: 0 0 1px #000;
+}
+.blog .col-md-4 a:hover {
+  color: #000;
+}
+.blog .col-md-4 h3 {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  color: #fff;
+}
+.blog .col-md-4 .button {
+  background: #ffd100;
+  color: #212529;
+  display: inline-block;
+  padding: 10px 30px;
+  text-decoration: none;
+  transform: skew(-10deg);
+  border: 1px solid #ffd100;
+  transition: 0.3s ease-in-out;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: absolute;
+  bottom: 30px;
+  right: 40px;
+}
+.blog .col-md-4 .button:hover {
+  background: #212529;
+  color: #fff;
+  border: 1px solid #212529;
+}
+
+/***************************
+subscribe
+***************************/
+.subscribe {
+  background: #ffd100;
+}
+.subscribe input {
+  padding: 10px 30px;
+  transform: skewX(-10deg);
+}
+.subscribe .button {
+  background: transparent;
+  color: #fff;
+  display: inline-block;
+  padding: 10px 30px;
+  text-decoration: none;
+  transform: skew(-10deg);
+  border: 1px solid #ffd100;
+  transition: 0.3s ease-in-out;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 1px solid #fff;
+}
+.subscribe .button:hover {
+  background: #212529;
+  color: #fff;
+  border: 1px solid #212529;
+}
+
+/***************************
+footer
+***************************/
+footer {
+  background: #000;
+}
+footer img {
+  width: 150px;
+}
+footer h4 {
+  color: #fff;
+}
+footer ul a {
+  color: #999999;
+  line-height: 2;
+}
+footer ul a:hover {
+  color: #ffd100;
+}
+
+/*# sourceMappingURL=style.css.map */
